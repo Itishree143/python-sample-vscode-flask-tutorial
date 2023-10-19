@@ -10,7 +10,7 @@ pool:
   name: Default
 strategy:
   matrix:
-    Python36:
+    Python38:
       python.version: '3.8'
 steps:
 - task: UsePythonVersion@0
