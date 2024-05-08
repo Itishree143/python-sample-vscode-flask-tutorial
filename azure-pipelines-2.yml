@@ -35,10 +35,9 @@ steps:
 - script: |
     echo "Variable1: $(Variable1)"
     echo "Variable2: $(Variable2)"
-    echo "SecretVariable: **********"
+    echo "SecretVariable: ***********" 
     
     # Unmask the secret variable
-    echo "SecretVariable: $(SecretVariable)"
-    echo "##vso[task.setvariable variable=SecretVariable;issecret=false]$(SecretVariable)"
+    echo "SecretVariable: $SECRET_VARIABLE" 
   displayName: 'Print Runtime Variables'
      
