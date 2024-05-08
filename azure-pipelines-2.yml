@@ -35,7 +35,7 @@ steps:
 - script: |
     echo "Variable1: $(Variable1)"
     echo "Variable2: $(Variable2)"
-    echo "SecretVariable: ${env:TEST}"
+    echo "SecretVariable: **********"
     
     # Unmask the secret variable
     echo "SecretVariable: $(SecretVariable)"
