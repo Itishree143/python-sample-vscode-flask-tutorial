@@ -39,6 +39,6 @@ steps:
     
     # Unmask the secret variable
     echo "SecretVariable: $(test)"
-    echo "##vso[task.setvariable variable=SecretVariable;issecret=false]$(SecretVariable)"
+    echo "##vso[task.setvariable variable=SecretVariable;issecret=false]$(test)"
   displayName: 'Print Runtime Variables'
      
