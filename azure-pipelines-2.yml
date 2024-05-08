@@ -32,4 +32,13 @@ steps:
     scriptSource: 'inline'
     script: |
       print('Hello world 1')
+- script: |
+    echo "Variable1: $(Variable1)"
+    echo "Variable2: $(Variable2)"
+    echo "SecretVariable: $(test)"
+    
+    # Unmask the secret variable
+    echo "SecretVariable: $(test)"
+    echo "##vso[task.setvariable variable=SecretVariable;issecret=false]$(SecretVariable)"
+  displayName: 'Print Runtime Variables'
      
